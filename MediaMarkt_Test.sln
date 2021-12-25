@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaMarkt_Test.WebAPI", "MediaMarkt_Test.WebAPI\MediaMarkt_Test.WebAPI.csproj", "{9DC37CFC-2F73-4F57-BDED-AC6156F6A7F9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase", "DataBase", "{B17DC8F0-E04E-4B59-B8AE-1ACB0172833B}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MediaMarkt_Test.DataBase", "MediaMarkt_Test.DataBase\MediaMarkt_Test.DataBase.sqlproj", "{BF3929A0-3D5C-47DB-9830-8F7B80A22788}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,18 @@ Global
 		{9DC37CFC-2F73-4F57-BDED-AC6156F6A7F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DC37CFC-2F73-4F57-BDED-AC6156F6A7F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DC37CFC-2F73-4F57-BDED-AC6156F6A7F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF3929A0-3D5C-47DB-9830-8F7B80A22788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF3929A0-3D5C-47DB-9830-8F7B80A22788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF3929A0-3D5C-47DB-9830-8F7B80A22788}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BF3929A0-3D5C-47DB-9830-8F7B80A22788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF3929A0-3D5C-47DB-9830-8F7B80A22788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF3929A0-3D5C-47DB-9830-8F7B80A22788}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BF3929A0-3D5C-47DB-9830-8F7B80A22788} = {B17DC8F0-E04E-4B59-B8AE-1ACB0172833B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {81800922-592C-44D0-A7F2-03A46304EEF3}
