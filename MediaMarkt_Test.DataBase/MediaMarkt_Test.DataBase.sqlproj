@@ -64,6 +64,6 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="StoredProcedures\product_GetById.sql" />
-    <Build Include="StoredProcedures\product_GetByName.sql" />
+    <Build Include="StoredProcedures\product_GetByString.sql" />
   </ItemGroup>
 </Project>
