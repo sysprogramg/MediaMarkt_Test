@@ -4,4 +4,9 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MediaMarkt_Test.Core\MediaMarkt_Test.Core.csproj" />
+    <ProjectReference Include="..\MediaMarkt_Test.Infrastrucure\MediaMarkt_Test.Infrastrucure.csproj" />
+  </ItemGroup>
+
 </Project>

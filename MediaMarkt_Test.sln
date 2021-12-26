@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaMarkt_Test.WebAPI", "MediaMarkt_Test.WebAPI\MediaMarkt_Test.WebAPI.csproj", "{9DC37CFC-2F73-4F57-BDED-AC6156F6A7F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediaMarkt_Test.WebAPI", "MediaMarkt_Test.WebAPI\MediaMarkt_Test.WebAPI.csproj", "{9DC37CFC-2F73-4F57-BDED-AC6156F6A7F9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase", "DataBase", "{B17DC8F0-E04E-4B59-B8AE-1ACB0172833B}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MediaMarkt_Test.DataBase", "MediaMarkt_Test.DataBase\MediaMarkt_Test.DataBase.sqlproj", "{BF3929A0-3D5C-47DB-9830-8F7B80A22788}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediaMarkt_Test.Infrastrucure", "MediaMarkt_Test.Infrastrucure\MediaMarkt_Test.Infrastrucure.csproj", "{FCBD0ABA-60E7-4BD5-BBE3-C7744C23550F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediaMarkt_Test.Core", "MediaMarkt_Test.Core\MediaMarkt_Test.Core.csproj", "{D0805A8C-D7A9-4CA7-8C62-BCD611E27E11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,14 @@ Global
 		{BF3929A0-3D5C-47DB-9830-8F7B80A22788}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF3929A0-3D5C-47DB-9830-8F7B80A22788}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BF3929A0-3D5C-47DB-9830-8F7B80A22788}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FCBD0ABA-60E7-4BD5-BBE3-C7744C23550F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCBD0ABA-60E7-4BD5-BBE3-C7744C23550F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCBD0ABA-60E7-4BD5-BBE3-C7744C23550F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCBD0ABA-60E7-4BD5-BBE3-C7744C23550F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0805A8C-D7A9-4CA7-8C62-BCD611E27E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0805A8C-D7A9-4CA7-8C62-BCD611E27E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0805A8C-D7A9-4CA7-8C62-BCD611E27E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0805A8C-D7A9-4CA7-8C62-BCD611E27E11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
