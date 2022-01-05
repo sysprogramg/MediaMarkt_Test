@@ -28,9 +28,9 @@ namespace MediaMarkt_Test.Infrastrucure.Repositories
 
                 return MainDBConnection.QuerySingle<Product>(stored, parameters, commandType: System.Data.CommandType.StoredProcedure);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
         }
 
@@ -44,9 +44,9 @@ namespace MediaMarkt_Test.Infrastrucure.Repositories
 
                 return MainDBConnection.Query<Product>(stored, parameters, commandType: System.Data.CommandType.StoredProcedure).AsList();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
         }
 
@@ -57,15 +57,15 @@ namespace MediaMarkt_Test.Infrastrucure.Repositories
                 string stored = "product_Insert";
                 DynamicParameters parameters = new DynamicParameters();
                 parameters.Add("strName", product.Name);
-                parameters.Add("strDescription", product.Desciption);
-                parameters.Add("decPrice", dbType: System.Data.DbType.Decimal, size: 18, precision: 2, value: product.Price);
+                parameters.Add("strDescription", product.Description);
+                parameters.Add("decPrice", product.Price);
                 parameters.Add("strFamily", product.Family);
 
                 MainDBConnection.Execute(stored, parameters, commandType: System.Data.CommandType.StoredProcedure);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
         }
         #endregion

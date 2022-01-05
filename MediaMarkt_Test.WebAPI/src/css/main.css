@@ -1,0 +1,26 @@
+﻿/* List products
+----------------------------------------------------*/
+.item-container {
+    padding: 0.5rem;
+}
+
+    .item-container > .item:first-child {
+        background-color: #F5FAFF;
+        color: black;
+        font-weight: bold;
+        border-bottom: 1px solid #dddddd;
+        margin-bottom: 3px;
+    }
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 0.5fr;
+}
+
+    .item > span {
+        padding: 2px;
+    }
+
+        .item > span:nth-child(4) {
+            text-align: right;
+        }

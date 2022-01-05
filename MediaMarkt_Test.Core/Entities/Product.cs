@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.ComponentModel.DataAnnotations;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,11 +9,15 @@ namespace MediaMarkt_Test.Core.Entities
 {
     public class Product
     {
-        public int id { get; private set; }
-        public string Name { get; private set; }
-        public string Desciption { get; private set; }
-        public double Price { get; private set; }
-        public string Family { get; private set; }
+        public int? id { get; set; }
+        [Required]
+        public string Name { get; set; }
+        [Required]
+        public string Description { get; set; }
+        [Required]
+        public double Price { get; set; }
+        [Required]
+        public string Family { get; set; }
 
         /// <summary>
         /// Mapping empty constructor
@@ -22,7 +27,7 @@ namespace MediaMarkt_Test.Core.Entities
         {
             this.id = id;
             this.Name = name;
-            this.Desciption = description;
+            this.Description = description;
             this.Price = price;
             this.Family = family;
         }

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Test</title>
+    <link rel="stylesheet" href="~/src/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/src/css/main.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="pb-3">
+            <h1 class="display-4">MediaMarkt API Test</h1>
+            <p><a href="/swagger" target="_blank">Swagger Documentation</a></p>
+        </div>
+        <div>
+            <div>
+                <h4>List of Products</h4>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="String to search" id="inputSearch">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" id="btnSearch" type="button">Search</button>
+                    </div>
+                </div>
+            </div>
+            <ul class="item-container">
+                <li class="item headers">
+                    <span>Name</span>
+                    <span>Description</span>
+                    <span>Family</span>
+                    <span>Price</span>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-primary" onclick="location.href='@Url.Action("Create")'">Add Product</button>
+        </div>
+    </div>
+    <script src="~/src/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/src/lib/jquery/dist/jquery.blockUI.js"></script>
+    <script src="~/src/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/src/js/main.js" asp-append-version="true"></script>
+</body>
+</html>
