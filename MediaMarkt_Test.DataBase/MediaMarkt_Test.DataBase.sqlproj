@@ -66,4 +66,7 @@
     <Build Include="StoredProcedures\product_GetById.sql" />
     <Build Include="StoredProcedures\product_GetByString.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="StoredProcedures\product_Insert.sql" />
+  </ItemGroup>
 </Project>
